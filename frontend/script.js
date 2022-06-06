@@ -15,8 +15,8 @@ const drawUsers = async () => {
     for(let item of users) {
         usersBlock.append(
             `
-                <div>
-                    ${item.fullName}
+                <div onclick="setUser(${item.chatId})">
+                    <p>${item.fullName}</p>
                 </div>
             `
         );
